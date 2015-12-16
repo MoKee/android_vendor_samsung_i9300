@@ -1,4 +1,4 @@
-# Copyright (C) 2013 The CyanogenMod Project
+# Copyright (C) 2012 The CyanogenMod Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -15,11 +15,16 @@
 LOCAL_PATH := vendor/samsung/i9300
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/proprietary/system/bin/gpsd:system/bin/gpsd \
-    $(LOCAL_PATH)/proprietary/system/lib/hw/gps.exynos4.so:system/lib/hw/gps.exynos4.so \
-    $(LOCAL_PATH)/proprietary/system/lib/hw/vendor-camera.exynos4.so:system/lib/hw/vendor-camera.exynos4.so \
-    $(LOCAL_PATH)/proprietary/system/lib/hw/sensors.smdk4x12.so:system/lib/hw/sensors.smdk4x12.so \
+    $(LOCAL_PATH)/proprietary/system/bin/glgps:system/bin/glgps
+
+PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/system/lib/libakm.so:system/lib/libakm.so \
-    $(LOCAL_PATH)/proprietary/system/lib/libsec-ril.so:system/lib/libsec-ril.so \
-    $(LOCAL_PATH)/proprietary/system/usr/idc/sec_touchscreen.idc:system/usr/idc/sec_touchscreen.idc \
+    $(LOCAL_PATH)/proprietary/system/lib/libsec-ril.so:system/lib/libsec-ril.so
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/proprietary/system/lib/hw/camera.vendor.smdk4x12.so:system/lib/hw/camera.vendor.smdk4x12.so \
+    $(LOCAL_PATH)/proprietary/system/lib/hw/gps.tegra3.so:system/lib/hw/gps.exynos4.so \
+    $(LOCAL_PATH)/proprietary/system/lib/hw/sensors.smdk4x12.so:system/lib/hw/sensors.smdk4x12.so
+
+PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/system/usr/keylayout/sec_touchkey.kl:system/usr/keylayout/sec_touchkey.kl
