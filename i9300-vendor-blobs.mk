@@ -22,7 +22,4 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/system/lib/libsec-ril.so:system/lib/libsec-ril.so
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/proprietary/system/lib/hw/gps.tegra3.so:system/lib/hw/gps.exynos4.so
-
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/proprietary/system/usr/keylayout/sec_touchkey.kl:system/usr/keylayout/sec_touchkey.kl
+    $(LOCAL_PATH)/proprietary/system/lib/hw/gps.tegra3.so:system/lib/hw/gps.exynos4.vendor.so
